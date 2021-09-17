@@ -1,0 +1,140 @@
+<html>
+<head>
+    <title>Task 1</title>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="t1css.css">
+</head>
+
+<style>
+
+body, html {
+padding:0px;
+margin:0px;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h2{
+font-size:35px;
+font-family: arial;
+}
+
+
+.top-left {
+  position: absolute;
+  top: 250px;
+  left: 150px;
+color:white;
+font-weight: 700;
+font-size:70px;
+color:orange;
+}
+p{
+font-family: Comic Sans MS;
+font-size:25px;
+}
+
+
+button {
+  background-color: orange;
+  border: none;
+border-radius: 6px;
+  color: white;
+margin-left:4px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+button:hover{
+color: orange;
+ background: none;
+border:1px solid orange;
+}
+th {
+  background-color: orange;
+  color: white;
+}
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  padding: 15px;
+}
+
+</style>
+
+    <body>
+<div class="bg-img">
+<div class="top-left">Manali</div>
+
+</div>
+<h2 style=color:orange;>About</h2>
+<p><b>Manali is most famous for breathtaking landscapes, the crystal clear skies, the highest mountain passes, thrilling adventure activities, Buddhist Monasteries and festivals.Being situated on the snow-clad fringes of the Himalayan Mountains, Leh offers its tourists the chance to experience the magical charm of Himalayas and to explore its rough and rugged terrains. The land of Ladakh, renowned as the cold desert, holds immense pristine beauty for its beholder.</b></p>
+
+<h2 style=color:orange;>Trip Details</h2>
+<table>
+  <tr>
+    <th>Starting From</th>
+    <th>Number Of Days</th>
+    <th>Pick & Drop</th>
+  </tr>
+  <tr>
+    <td>Rs.20,999</td>
+    <td>6 Days </td>
+    <td>Delhi</td>
+  </tr>
+  <tr>
+    <td>Total 25000 (5%GSt)</td>
+    <td>9 Nights</td>
+    <td>-</td>
+  </tr>
+<tr>
+<td>Pay 50% payment  before the trip.</td>
+</tr>
+</table>
+<br>
+<br>
+
+    
+<button onclick="myFunction()">Book Now </button>
+<br>
+<br>
+
+ <fieldset style="width:600px">
+               <legend><b>Enter the scores:</b></legend>
+             <br/><br/>
+                <table border="1">
+                    <tr><td>English</td><td><input type="text" id="txtEnglish"></td></tr>
+                    <tr><td>Hindi</td><td><input type="text" id="txtHindi"></td></tr>
+                    <tr><td>Maths</td><td><input type="text" id="txtMaths"></td></tr>
+                    <tr><td>Science</td><td><input type="text" id="txtScience"></td></tr>             
+                </table><br/><br/>
+               <button onclick="getReport()">Calculate</button>
+            </fieldset>
+            
+            <h2 style=color:orange;>Result</h2>
+            
+            <table border="1">
+             
+                <tr><td>Total Marks</td><td><input type="text" id="txtTotalMarks" readonly></td></tr>
+                <tr><td>Average Marks</td><td><input type="text" id="txtAvgMarks" readonly></td></tr>
+                
+                
+        </table> 
+<script src="t1js.js"></script>
+</body>
+</html>
+
